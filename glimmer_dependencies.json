@@ -1,0 +1,345 @@
+{
+ "shaders/lib/TAA.glsl": [
+  "a1 (const)",
+  "a2 (const)"
+ ],
+ "shaders/lib/atmosphere/clouds.glsl": [
+  "clamp01 (function)",
+  "getCloudDensity (function)",
+  "getCloudShadow (function)",
+  "getClouds (function)",
+  "multipleScattering (function)",
+  "remap (function)"
+ ],
+ "shaders/lib/atmosphere/fog.glsl": [
+  "HEIGHT_FOG_TOP_HEIGHT (macro)",
+  "atmosphericFog (function)",
+  "cloudyFog (function)",
+  "defaultFog (function)"
+ ],
+ "shaders/lib/atmosphere/sky/hillaireCommon.glsl": [
+  "CLOUD_EXTINCTION_COLOR (macro)",
+  "atmospherePos (global)",
+  "getValFromTLUT (function)",
+  "groundRadiusMM (const)",
+  "moonAngularRadius (const)",
+  "moonIrradiance (const)",
+  "rayIntersectSphere (function)",
+  "sunAngularRadius (const)",
+  "sunIrradiance (const)",
+  "sunRadiance (const)",
+  "tLUTRes (const)",
+  "unmapAerialPerspectivePos (function)"
+ ],
+ "shaders/lib/atmosphere/sky/sky.glsl": [
+  "endSky (function)",
+  "getSky (function)",
+  "sun (function)"
+ ],
+ "shaders/lib/common.glsl": [
+  "EBS (global)",
+  "dhDepthTex0 (macro)",
+  "dhDepthTex1 (macro)",
+  "dhProjectionInverse (macro)",
+  "isDay (global)",
+  "lightDir (global)",
+  "resolution (global)",
+  "skyMultiplier (global)",
+  "sunDir (global)",
+  "weatherSkylightColor (macro)",
+  "weatherSunlightColor (macro)",
+  "worldLightDir (global)",
+  "worldSunDir (global)",
+  "worldTimeCounter (macro)"
+ ],
+ "shaders/lib/common/debug.glsl": [
+  "show (function)"
+ ],
+ "shaders/lib/common/material.glsl": [
+  "Material (struct)",
+  "NO_METAL (macro)",
+  "OTHER_METAL (macro)",
+  "getMetalN_K (function)",
+  "materialFromSpecularMap (function)"
+ ],
+ "shaders/lib/common/materialIDs.glsl": [
+  "DH_BLOCK_LAVA (macro)",
+  "DH_BLOCK_LEAVES (macro)",
+  "DH_BLOCK_WATER (macro)",
+  "isLava (function)",
+  "isLeaves (function)",
+  "isLetsLightThrough (function)",
+  "isPlant (function)",
+  "isTorchLightColor (function)",
+  "isWater (function)",
+  "sway (function)"
+ ],
+ "shaders/lib/common/settings.glsl": [
+  "AMBIENT_STRENGTH (macro)",
+  "ATMOSPHERIC_FOG (macro)",
+  "BASE_FOG_DENSITY (macro)",
+  "BLOCKLIGHT_STRENGTH (macro)",
+  "BLOCK_OUTLINE_B (macro)",
+  "BLOCK_OUTLINE_G (macro)",
+  "BLOCK_OUTLINE_R (macro)",
+  "BLOOM (macro)",
+  "BLOOM_RADIUS (macro)",
+  "BLOOM_STRENGTH (macro)",
+  "CAVE_SKY_DARKENING (macro)",
+  "CLOUDS (macro)",
+  "CLOUDY_FOG (macro)",
+  "CLOUD_COVERAGE (macro)",
+  "CLOUD_DENSITY (macro)",
+  "CLOUD_SHADOWS (macro)",
+  "CONTRAST (macro)",
+  "DH_AO (macro)",
+  "DH_AO_SAMPLES (macro)",
+  "DIRECTIONAL_LIGHTMAPS (macro)",
+  "DYNAMIC_HANDLIGHT (macro)",
+  "EMISSION_STRENGTH (macro)",
+  "EXPOSURE (macro)",
+  "FADE_REFLECTIONS (macro)",
+  "FXAA_SUBPIXEL (macro)",
+  "GLIMMER_SHADERS (macro)",
+  "GODRAYS (macro)",
+  "GODRAYS_SAMPLES (macro)",
+  "MORNING_FOG_DENSITY (macro)",
+  "PARALLAX_DISTANCE (macro)",
+  "PARALLAX_HEIGHT (macro)",
+  "PARALLAX_SAMPLES (macro)",
+  "PARALLAX_SHADOW (macro)",
+  "PARALLAX_SHADOW_SAMPLES (macro)",
+  "PATCHY_LAVA (macro)",
+  "PBR_MODE (macro)",
+  "PIXEL_SIZE (macro)",
+  "RAIN_PUDDLES (macro)",
+  "REFLECTION_MODE (macro)",
+  "REFRACTION (macro)",
+  "ROUGH_SKY_REFLECTIONS (macro)",
+  "SATURATION (macro)",
+  "SEA_LEVEL (macro)",
+  "SHADOWS (macro)",
+  "SHADOW_SAMPLES (macro)",
+  "SHADOW_SOFTNESS (macro)",
+  "SSR_STEPS (macro)",
+  "TEMPORAL_FILTER (macro)",
+  "VOXEL_MAP_SIZE (macro)",
+  "WATER_ABSORPTION_MOD (macro)",
+  "WATER_SCATTERING_MOD (macro)",
+  "WAVING_BLOCKS (macro)",
+  "WEBSITE (macro)",
+  "ambientOcclusionLevel (const)",
+  "entityShadowDistanceMul (const)",
+  "shadowDistance (const)",
+  "shadowMapResolution (const)",
+  "sunPathRotation (const)"
+ ],
+ "shaders/lib/common/spaceConversions.glsl": [
+  "screenSpaceToViewSpace (function)",
+  "viewSpaceToScreenSpace (function)"
+ ],
+ "shaders/lib/common/syntax.glsl": [
+  "GREEN (macro)",
+  "PI (const)",
+  "RED (macro)",
+  "clamp01 (macro)",
+  "max0 (macro)",
+  "max3 (macro)",
+  "maxVec2 (macro)",
+  "maxVec3 (macro)",
+  "min3 (macro)",
+  "minVec3 (macro)",
+  "pow2 (function)",
+  "pow3 (function)",
+  "pow5 (function)",
+  "rcp (function)"
+ ],
+ "shaders/lib/common/uniforms.glsl": [
+  "alphaTestRef (uniform)",
+  "aspectRatio (uniform)",
+  "biomeCanPrecipitateSmooth (uniform)",
+  "biomeCanRainSmooth (uniform)",
+  "blindness (uniform)",
+  "blueNoiseTex (uniform)",
+  "cameraPosition (uniform)",
+  "cameraPositionFract (uniform)",
+  "cameraPositionInt (uniform)",
+  "colortex0 (uniform)",
+  "colortex1 (uniform)",
+  "colortex10 (uniform)",
+  "colortex11 (uniform)",
+  "colortex12 (uniform)",
+  "colortex13 (uniform)",
+  "colortex14 (uniform)",
+  "colortex15 (uniform)",
+  "colortex4 (uniform)",
+  "colortex5 (uniform)",
+  "colortex6 (uniform)",
+  "colortex7 (uniform)",
+  "colortex8 (uniform)",
+  "colortex9 (uniform)",
+  "combinedProjection (macro)",
+  "combinedProjectionInverse (macro)",
+  "darknessLightFactor (uniform)",
+  "depthtex0 (uniform)",
+  "depthtex1 (uniform)",
+  "dhDepthTex0 (uniform)",
+  "dhDepthTex1 (uniform)",
+  "dhProjectionInverse (uniform)",
+  "far (uniform)",
+  "floodfillVoxelMapTex1 (uniform)",
+  "floodfillVoxelMapTex2 (uniform)",
+  "fogColor (uniform)",
+  "fogEnd (uniform)",
+  "frameCounter (uniform)",
+  "frameTime (uniform)",
+  "frameTimeCounter (const)",
+  "frameTimeCounter (uniform)",
+  "gbufferModelView (uniform)",
+  "gbufferModelViewInverse (uniform)",
+  "gbufferPreviousModelView (uniform)",
+  "gbufferPreviousProjection (uniform)",
+  "gbufferProjection (uniform)",
+  "humiditySmooth (uniform)",
+  "isEyeInWater (uniform)",
+  "lightningBoltPosition (uniform)",
+  "moonPhase (uniform)",
+  "near (uniform)",
+  "nightVision (uniform)",
+  "normals (uniform)",
+  "perlinNoiseTex (uniform)",
+  "previousCameraPosition (uniform)",
+  "rainStrength (uniform)",
+  "relativeEyePosition (uniform)",
+  "renderStage (uniform)",
+  "shadowtex1HW (uniform)",
+  "specular (uniform)",
+  "sunTransmittanceLUTTex (uniform)",
+  "thunderStrength (uniform)",
+  "upPosition (uniform)",
+  "viewHeight (uniform)",
+  "viewWidth (uniform)",
+  "wetness (uniform)",
+  "worldDay (uniform)",
+  "worldTime (uniform)"
+ ],
+ "shaders/lib/common/util.glsl": [
+  "blueNoise (function)",
+  "dualHenyeyGreenstein (function)",
+  "goldenAngle (const)",
+  "henyeyGreenstein (function)",
+  "interleavedGradientNoise (function)",
+  "luminance (function)",
+  "rgb (function)",
+  "rotate (function)",
+  "scale (const)",
+  "sincos (function)",
+  "vec2 (function)",
+  "vogelDiscSample (function)"
+ ],
+ "shaders/lib/dh.glsl": [
+  "dhMask (global)"
+ ],
+ "shaders/lib/endPortal.glsl": [
+  "endPortal (function)"
+ ],
+ "shaders/lib/ipbr/blocklightColors.glsl": [
+  "getBlocklightColor (function)"
+ ],
+ "shaders/lib/lighting/brdf.glsl": [
+  "areaLightNormalization (function)",
+  "brdf (function)",
+  "fresnel (function)",
+  "fresnelRoughness (function)",
+  "n (const)"
+ ],
+ "shaders/lib/lighting/shading.glsl": [
+  "getShadedColor (function)"
+ ],
+ "shaders/lib/lighting/shadows.glsl": [
+  "getShadowing (function)",
+  "sampleShadow (function)"
+ ],
+ "shaders/lib/post/processing.glsl": [
+  "postProcess (function)"
+ ],
+ "shaders/lib/post/tonemap.glsl": [
+  "a (const)",
+  "b (const)",
+  "c (const)",
+  "d (const)",
+  "tonemap (macro)",
+  "tonyMcMapface (function)",
+  "tonyMcMapfaceTex (uniform)"
+ ],
+ "shaders/lib/shadowSpace.glsl": [
+  "distort (function)",
+  "getShadowClipPos (function)",
+  "getShadowScreenPos (function)",
+  "mat3 (function)"
+ ],
+ "shaders/lib/util/packing.glsl": [
+  "decodeNormal (function)"
+ ],
+ "shaders/lib/util/screenSpaceRayTrace.glsl": [
+  "clamp01 (function)",
+  "handDepth (const)",
+  "rayIntersects (function)"
+ ],
+ "shaders/lib/util/spheremap.glsl": [
+  "mapSphere (function)"
+ ],
+ "shaders/lib/voxel/voxelData.glsl": [
+  "encodeVoxelData (function)"
+ ],
+ "shaders/lib/voxel/voxelMap.glsl": [
+  "mapVoxelPosInterp (function)"
+ ],
+ "shaders/lib/water/puddles.glsl": [
+  "PUDDLES_GLSL (macro)",
+  "overlayBlend (function)"
+ ],
+ "shaders/lib/water/waterFog.glsl": [
+  "WATER_ABSORPTION (macro)",
+  "WATER_DENSITY (macro)",
+  "WATER_SCATTERING (macro)",
+  "waterExtinction (global)",
+  "waterFog (function)"
+ ],
+ "shaders/lib/water/waterParallax.glsl": [
+  "WATER_PARALLAX_SAMPLES (macro)",
+  "waveNormal (function)"
+ ],
+ "shaders/lib/water/waveNormals.glsl": [
+  "WAVE_DEPTH (macro)",
+  "WAVE_E (macro)",
+  "waveHeight (function)",
+  "waveNormal (function)",
+  "wavedx (function)"
+ ],
+ "shaders/program/gbuffers_clrwl.glsl": [
+  "getMappedNormal (function)"
+ ],
+ "shaders/program/gbuffers_line.glsl": [
+  "alphaTestRef (uniform)",
+  "renderStage (uniform)",
+  "viewHeight (uniform)",
+  "viewWidth (uniform)"
+ ],
+ "shaders/program/gbuffers_main.glsl": [
+  "getMappedNormal (function)"
+ ],
+ "shaders/program/gbuffers_voxy.glsl": [
+  "GBUFFERS_VOXY (macro)",
+  "fogColor (macro)",
+  "gbufferModelView (macro)",
+  "gbufferModelViewInverse (macro)",
+  "gbufferPreviousProjection (macro)",
+  "gbufferProjection (macro)",
+  "voxy_emitFragment (function)",
+  "vxModelView (macro)"
+ ],
+ "shaders/program/prepare2.glsl": [
+  "SKYLIGHT_SAMPLES (macro)"
+ ]
+}
